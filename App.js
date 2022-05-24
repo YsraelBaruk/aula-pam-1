@@ -4,8 +4,9 @@
 const UselessTextInput = () => {
   const [text, onChangeText] = React.useState('Useless Text');
   const [number, onChangeNumber] = React.useState(null);
+
   return (
-    <SafeAreaView>
+    <View style={styles.container}>
       <TextInput style={styles.input} onChangeText={onChangeText} value={text} />
       <TextInput
         style={styles.input}
@@ -14,14 +15,14 @@ const UselessTextInput = () => {
         placeholder="useless placeholder"
         keyboardType="numeric"
       />
-    </SafeAreaView>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
   },
