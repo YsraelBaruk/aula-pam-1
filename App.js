@@ -1,3 +1,4 @@
+ import React from 'react';
  import{ StyleSheet, Text, View, SafeAreaView, StyleSheet, TextInput } from 'react-native';
 
 const UselessTextInput = () => {
@@ -31,3 +32,4 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 });
+export default UselessTextInput;
